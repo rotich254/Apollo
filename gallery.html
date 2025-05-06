@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Apollo Educational Activities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">Apollo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header py-5">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold">Photo Gallery</h1>
+            <p class="lead">Explore the visual journey of learning and fun at Apollo</p>
+        </div>
+    </header>
+
+    <!-- Gallery Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="gallery-filter">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-filter="all">All Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-filter="tech">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-filter="history">Historical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-filter="crops">Cash Crops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-filter="science">Science</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-filter="fun">Fun Activities</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 gallery-container">
+                <!-- Technology Exhibits -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="tech">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Robotics+Lab" alt="Robotics Lab" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Robotics Lab</h4>
+                                <p>Children learning to build robots</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="tech">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Coding+Corner" alt="Coding Corner" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Coding Corner</h4>
+                                <p>Children learning programming skills</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="tech">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=VR+Experience" alt="VR Experience" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>VR Experience</h4>
+                                <p>Children exploring virtual reality worlds</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Historical and Cultural Artifacts -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="history">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Ancient+Egypt+Exhibit" alt="Ancient Egypt Exhibit" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Ancient Egypt Exhibit</h4>
+                                <p>Interactive display of Egyptian artifacts</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="history">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Maya+Civilization" alt="Maya Civilization" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Maya Civilization</h4>
+                                <p>Learning about Maya culture and achievements</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="history">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=World+Cultures" alt="World Cultures" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>World Cultures Gallery</h4>
+                                <p>Learning about diverse global traditions</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cash Crops Education -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="crops">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Chocolate+Journey" alt="Chocolate Journey" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Chocolate Journey</h4>
+                                <p>From bean to bar chocolate making process</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="crops">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Spice+Route" alt="Spice Route" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>The Spice Route</h4>
+                                <p>Discovering global spice trade history</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="crops">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Coffee+World" alt="Coffee World" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Coffee World</h4>
+                                <p>Learning about coffee cultivation</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Science and Nature -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="science">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Science+Lab" alt="Science Lab" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Interactive Science Lab</h4>
+                                <p>Hands-on science experiments</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="science">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Space+Exploration" alt="Space Exploration" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Space Exploration</h4>
+                                <p>Learning about planets and stars</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="science">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Bug+World" alt="Bug World" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Bug World</h4>
+                                <p>Discovering insect life and behavior</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fun Activities -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="fun">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Bouncing+Castles" alt="Bouncing Castles" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Adventure Bouncing Castles</h4>
+                                <p>Fun physical activity for children</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="fun">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Art+Studio" alt="Art Studio" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Creative Art Studio</h4>
+                                <p>Creative expression through art</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="fun">
+                    <div class="gallery-card">
+                        <img src="https://via.placeholder.com/600x400?text=Science+Show" alt="Science Show" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Science Shows</h4>
+                                <p>Spectacular science demonstrations</p>
+                                <a href="#" class="btn btn-light btn-sm gallery-popup"><i class="bi bi-zoom-in"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg load-more">Load More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel">Image Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="" class="img-fluid w-100" id="modalImage">
+                    <p class="mt-3" id="modalDescription">Image description will appear here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Videos Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Video Gallery</h2>
+                <p class="lead">Watch our educational activities in action</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <!-- In a real site, you would embed actual videos here -->
+                            <img src="https://via.placeholder.com/600x400?text=Science+Experiments+Video" alt="Science Experiments" class="img-fluid">
+                            <div class="play-button">
+                                <i class="bi bi-play-circle-fill"></i>
+                            </div>
+                        </div>
+                        <div class="video-info p-3">
+                            <h4>Amazing Science Experiments</h4>
+                            <p>Watch our educators demonstrate fascinating scientific principles through engaging experiments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://via.placeholder.com/600x400?text=Robotics+Workshop+Video" alt="Robotics Workshop" class="img-fluid">
+                            <div class="play-button">
+                                <i class="bi bi-play-circle-fill"></i>
+                            </div>
+                        </div>
+                        <div class="video-info p-3">
+                            <h4>Robotics Workshop Highlights</h4>
+                            <p>See our young engineers build and program incredible robots in our technology lab.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://via.placeholder.com/600x400?text=Cultural+Festival+Video" alt="Cultural Festival" class="img-fluid">
+                            <div class="play-button">
+                                <i class="bi bi-play-circle-fill"></i>
+                            </div>
+                        </div>
+                        <div class="video-info p-3">
+                            <h4>Cultural Heritage Festival</h4>
+                            <p>Highlights from our multicultural celebration featuring music, dance, and traditional activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Your Experience -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Share Your Experience</h2>
+                    <p class="lead mb-4">Have amazing photos or videos from your visit? Share them with us and see them featured in our gallery!</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg">Submit Your Media</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white">Apollo</h4>
+                    <p class="text-white-50">Inspiring young minds through interactive educational experiences.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="programs.html" class="text-white-50">Programs</a></li>
+                        <li><a href="gallery.html" class="text-white-50">Gallery</a></li>
+                        <li><a href="events.html" class="text-white-50">Events</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Programs</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="programs.html#tech" class="text-white-50">Technology Exhibits</a></li>
+                        <li><a href="programs.html#history" class="text-white-50">Historical Artifacts</a></li>
+                        <li><a href="programs.html#crops" class="text-white-50">Cash Crops Education</a></li>
+                        <li><a href="programs.html#science" class="text-white-50">Science & Nature</a></li>
+                        <li><a href="programs.html#fun" class="text-white-50">Fun Activities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white">Contact Us</h5>
+                    <address class="text-white-50">
+                        <p><i class="bi bi-geo-alt me-2"></i>123 Education Lane, Learning City</p>
+                        <p><i class="bi bi-telephone me-2"></i>(555) 123-4567</p>
+                        <p><i class="bi bi-envelope me-2"></i>info@apollo-education.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="text-center text-white-50 mt-4">
+                <p>&copy; 2023 Apollo Educational Activities. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Gallery Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterLinks = document.querySelectorAll('.gallery-filter .nav-link');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            // Filter gallery items
+            filterLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    filterLinks.forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Gallery Modal
+            const galleryPopupLinks = document.querySelectorAll('.gallery-popup');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('galleryModalLabel');
+            const modalDescription = document.getElementById('modalDescription');
+            
+            galleryPopupLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const imgSrc = this.closest('.gallery-card').querySelector('img').getAttribute('src');
+                    const imgTitle = this.closest('.gallery-info').querySelector('h4').textContent;
+                    const imgDesc = this.closest('.gallery-info').querySelector('p').textContent;
+                    
+                    modalImage.setAttribute('src', imgSrc);
+                    modalTitle.textContent = imgTitle;
+                    modalDescription.textContent = imgDesc;
+                    
+                    const galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+                    galleryModal.show();
+                });
+            });
+            
+            // Video Play Button Click
+            const playButtons = document.querySelectorAll('.play-button');
+            
+            playButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    alert('In a real application, this would play the video!');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
