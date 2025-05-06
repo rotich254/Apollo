@@ -112,10 +112,19 @@ a {
     opacity: 0.1;
 }
 
+.hero-image {
+    position: relative;
+    overflow: hidden;
+}
+
 .hero-image img {
     transition: all 0.5s ease;
-    border: 8px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    clip-path: polygon(
+        0% 5%, 5% 0%, 20% 3%, 35% 0%, 45% 3%, 60% 0%, 75% 2%, 90% 0%, 100% 4%,
+        98% 15%, 100% 30%, 98% 45%, 100% 60%, 98% 75%, 100% 90%, 98% 100%,
+        85% 98%, 70% 100%, 55% 98%, 40% 100%, 25% 98%, 10% 100%, 0% 96%,
+        2% 80%, 0% 65%, 2% 50%, 0% 35%, 2% 20%
+    );
 }
 
 .hero-image img:hover {
@@ -295,15 +304,57 @@ a {
 .footer {
     background-color: var(--primary-color);
     color: white;
+    padding: 50px 0 30px;
+}
+
+.footer h4, .footer h5 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.footer-text {
+    color: #333333 !important;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.footer-link {
+    color: #333333 !important;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-block;
+    padding: 3px 0;
+}
+
+.footer-link:hover {
+    color: #000000 !important;
+    transform: translateX(5px);
+}
+
+.footer .text-white-50 {
+    color: #333333 !important;
+    font-weight: 600;
 }
 
 .footer a {
     transition: all 0.3s ease;
+    color: #333333 !important;
+    font-weight: 600;
 }
 
 .footer a:hover {
-    color: var(--secondary-color) !important;
+    color: #000000 !important;
     text-decoration: none;
+}
+
+.footer p {
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
 .social-icons a {
@@ -312,14 +363,30 @@ a {
     height: 36px;
     line-height: 36px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     transition: all 0.3s ease;
+    color: white !important;
 }
 
 .social-icons a:hover {
     background-color: var(--secondary-color);
     transform: translateY(-3px);
+}
+
+.footer .container {
+    position: relative;
+}
+
+.footer .container::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Animation */
@@ -890,4 +957,4 @@ a {
 .video-info h4 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
-} 
+}
