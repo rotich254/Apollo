@@ -162,15 +162,30 @@ a {
 }
 
 .feature-icon {
-    font-size: 2.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 1.5rem;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 auto 1.5rem;
     transition: all 0.3s ease;
+    min-height: 220px;
+}
+
+.feature-image {
+    flex: 1 1 auto;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    filter: saturate(90%);
+}
+
+.feature-card:hover .feature-image {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    filter: saturate(120%);
+    border-radius: 15px;
 }
 
 .feature-card:nth-child(1) .feature-icon {
