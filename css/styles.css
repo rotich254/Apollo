@@ -118,7 +118,6 @@ a {
 }
 
 .hero-image img {
-    transition: all 0.5s ease;
     clip-path: polygon(
         0% 5%, 5% 0%, 20% 3%, 35% 0%, 45% 3%, 60% 0%, 75% 2%, 90% 0%, 100% 4%,
         98% 15%, 100% 30%, 98% 45%, 100% 60%, 98% 75%, 100% 90%, 98% 100%,
@@ -178,14 +177,18 @@ a {
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-    filter: saturate(90%);
+    transition: transform 1.5s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: rotateX(0deg);
 }
 
 .feature-card:hover .feature-image {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-    filter: saturate(120%);
-    border-radius: 15px;
+    transform: rotateX(360deg);
+}
+
+.feature-card:not(:hover) .feature-image {
+    transform: rotateX(0deg);
 }
 
 .feature-card:nth-child(1) .feature-icon {
@@ -265,7 +268,6 @@ a {
     background-image: url('https://via.placeholder.com/600x400');
     background-size: cover;
     background-position: center;
-    transition: all 0.5s ease;
 }
 
 .events-image:hover {
@@ -485,7 +487,6 @@ a {
     margin: 0 auto;
     overflow: hidden;
     border: 5px solid rgba(197, 222, 0, 0.1);
-    transition: all 0.3s ease;
 }
 
 .team-card:hover .team-img-container {
@@ -884,7 +885,6 @@ a {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    transition: all 0.3s ease;
 }
 
 .gallery-card:hover {
@@ -960,7 +960,6 @@ a {
     color: white;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
 
 .video-thumbnail:hover .play-button {
